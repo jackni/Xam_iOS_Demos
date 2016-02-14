@@ -41,7 +41,7 @@ namespace MyDemo.Core
         {
             //throw new NotImplementedException();
             List<T> result = new List<T>();
-            _cts = new CancellationTokenSource(_opertionTimeoutMs);
+            _cts = new CancellationTokenSource(_longRunOperationTimeout);
             try
             {
                 IMobileServiceSyncTable<T> syncTable = _serviceClient.GetSyncTable<T>();
@@ -58,6 +58,7 @@ namespace MyDemo.Core
                 if (syncCloud)
                 {
                     await syncTable.PullAsync(queryId, syncTable.Where(predicate),_cts.Token);
+                    //await syncTable.PullAsync(queryId, syncTable.Where(predicate));
                 }
 
                 result = await syncTable.Where(predicate).ToListAsync();
@@ -227,6 +228,31 @@ namespace MyDemo.Core
                 }
             }
         }
+
+        public async Task PushToCloud()
+        {
+            _cts = new CancellationTokenSource(_longRunOperationTimeout);
+            if (CrossConnectivity.Current.IsConnected)
+            {
+                try
+                {
+                    await _serviceClient.SyncContext.PushAsync(_cts.Token);
+                    //await _serviceClient.SyncContext.PushAsync();
+                }
+                catch(MobileServicePushFailedException pushEx)
+                {
+                    Debug.WriteLine("An error occured during push.  Stack Trace = " + pushEx.StackTrace.ToString());
+                    throw;
+                }
+                catch (Exception e)
+                {
+                    //var r = await Acr.UserDialogs.UserDialogs.Instance.ConfirmAsync("We encountered an issue synchronising data.  Please sync manually", "Resync", "OK", null);
+                    Debug.WriteLine("An error occured during sync.  Stack Trace = " + e.StackTrace.ToString());
+                    throw;
+                }
+            }
+        }
+
         #endregion
     }
 }

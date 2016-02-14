@@ -20,6 +20,8 @@ namespace MyDemo.Core
         Task DeleteDataAsync<T>(T deleteData,string queryId,bool syncCloud);
 
         Task PushToCloud(CancellationToken callectionToken);
+
+        Task PushToCloud();
     }
 }
 

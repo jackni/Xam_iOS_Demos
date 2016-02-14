@@ -28,7 +28,7 @@ namespace MyDemo.Core
             _dataService = Locator.Current.GetService<IDataService>();
            
 
-            Refresh = ReactiveCommand.CreateAsyncObservable(x=>GetTodoItemList());
+            Refresh = ReactiveCommand.CreateAsyncObservable(x=>GetTodoItemList(true));
             Refresh
                 .Subscribe(todolist=> 
                     {
@@ -40,11 +40,11 @@ namespace MyDemo.Core
                         this.Log().Error(thrownException); 
                     });
             
-            TodoItemList.WhenAnyValue(changes =>
-                {
-                    TodoItem newItem = changes.ItemsAdded.Cast<TodoItem>();
-                    AddTodoItem(newItem).ToObservable();
-                });
+//            TodoItemList.WhenAnyValue(changes =>
+//                {
+//                    TodoItem newItem = changes.ItemsAdded.Cast<TodoItem>();
+//                    AddTodoItem(newItem).ToObservable();
+//                });
         }
 
         #region Methods

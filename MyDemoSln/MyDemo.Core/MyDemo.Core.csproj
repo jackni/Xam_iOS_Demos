@@ -44,6 +44,7 @@
     <Compile Include="AzureMobileService\AMSService.cs" />
     <Compile Include="Repository\AMSToDoRepo.cs" />
     <Compile Include="ViewModels\ToDoViewModel.cs" />
+    <Compile Include="Constants\AzureMobileServiceConfig.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
@@ -113,6 +114,7 @@
     <Folder Include="Extensions\" />
     <Folder Include="AzureMobileService\" />
     <Folder Include="Repository\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyDemo.Data\MyDemo.Data.csproj">

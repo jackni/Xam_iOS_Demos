@@ -21,10 +21,8 @@ namespace MyDemo.Core
             }
         }
 
-        const string applicationURL = @"https://chauffeurupmobileservice.azure-mobile.net/";
-        const string applicationKey = @"bBbFuSsuNOnsxASXdDMPEbzAxQkJEK48";
         //local storage name.
-        public string localDbPath = "chauffeurUpstore.db";
+        public string localDbPath = "demoTest.db";
 
         public MobileServiceClient AzureServiceClient;
 
@@ -34,7 +32,7 @@ namespace MyDemo.Core
 
         public AMSService()
         {
-            AzureServiceClient = AMSDataSetup.MobileServiceStoreSetup(applicationURL, applicationKey);
+            AzureServiceClient = AMSDataSetup.MobileServiceStoreSetup(AzureMobileServiceConfig.applicationURL, AzureMobileServiceConfig.applicationKey);
         }
 
         #endregion
