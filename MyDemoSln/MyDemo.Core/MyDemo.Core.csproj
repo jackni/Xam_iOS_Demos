@@ -45,6 +45,12 @@
     <Compile Include="Repository\AMSToDoRepo.cs" />
     <Compile Include="ViewModels\ToDoViewModel.cs" />
     <Compile Include="Constants\AzureMobileServiceConfig.cs" />
+    <Compile Include="GoogleService\PlaceApi\Term.cs" />
+    <Compile Include="GoogleService\PlaceApi\MatchedSubstring.cs" />
+    <Compile Include="GoogleService\PlaceApi\Prediction.cs" />
+    <Compile Include="GoogleService\PlaceApi\LocationPrediction.cs" />
+    <Compile Include="GoogleService\PlaceApi\GoogleAPIRequestResult.cs" />
+    <Compile Include="Constants\GoogleServiceConfig.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
@@ -115,6 +121,8 @@
     <Folder Include="AzureMobileService\" />
     <Folder Include="Repository\" />
     <Folder Include="Constants\" />
+    <Folder Include="GoogleService\" />
+    <Folder Include="GoogleService\PlaceApi\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyDemo.Data\MyDemo.Data.csproj">

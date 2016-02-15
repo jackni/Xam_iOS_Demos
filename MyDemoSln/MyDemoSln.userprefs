@@ -1,30 +1,29 @@
 ﻿<Properties StartupItem="MyApp.iOS/MyApp.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.9.2" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyDemo.Core/Constants/GoogleServiceConfig.cs">
     <Files>
-      <File FileName="MyApp.iOS/Controllers/DataSync/AMSController.cs" Line="70" Column="55" />
-      <File FileName="MyDemo.Core/Interfaces/IDataService.cs" Line="14" Column="9" />
-      <File FileName="MyDemo.Core/Services/AMSDataService.cs" Line="40" Column="120" />
-      <File FileName="MyDemo.Core/ViewModels/ToDoViewModel.cs" Line="45" Column="75" />
-      <File FileName="MyDemo.Core/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
-      <File FileName="GoogleHelper/MyClass.cs" Line="1" Column="1" />
+      <File FileName="MyDemo.Core/Constants/AzureMobileServiceConfig.cs" Line="14" Column="1" />
+      <File FileName="MyDemo.Core/GoogleService/PlaceApi/GoogleAPIRequestResult.cs" Line="1" Column="1" />
+      <File FileName="MyDemo.Core/Constants/GoogleServiceConfig.cs" Line="7" Column="92" />
+      <File FileName="MyApp.iOS/GoogleServiceHelper/GooglePlaceHelper.cs" Line="1" Column="1" />
+      <File FileName="MyDemo.Core/GoogleService/PlaceApi/Prediction.cs" Line="1" Column="1" />
+      <File FileName="MyApp.iOS/Controllers/UIControllers/GooglePlaceController.cs" Line="1" Column="1" />
+      <File FileName="MyApp.iOS/Controllers/UIControllers/AddressLookupTableSource.cs" Line="1" Column="1" />
+      <File FileName="MyApp.iOS/Controllers/DataSync/AMSController.cs" Line="1" Column="1" />
+      <File FileName="MyApp.iOS/Main.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MyDemoSln" expanded="True">
-            <Node name="GoogleHelper" expanded="True" />
-            <Node name="MyApp.iOS" expanded="True">
-              <Node name="ComponentReferenceFolder" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/jackni/Documents/Study/MyDemoSln/MyApp.iOS/Controllers/AMSController.cs" line="59" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="143" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="151" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="157" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="163" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="136" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="239" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="251" column="1" />
+      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="244" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
