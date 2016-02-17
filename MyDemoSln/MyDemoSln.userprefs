@@ -1,29 +1,43 @@
 ﻿<Properties StartupItem="MyApp.iOS/MyApp.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.9.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyDemo.Core/Constants/GoogleServiceConfig.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyDemo.Core/Services/AMSDataService.cs">
     <Files>
-      <File FileName="MyDemo.Core/Constants/AzureMobileServiceConfig.cs" Line="14" Column="1" />
-      <File FileName="MyDemo.Core/GoogleService/PlaceApi/GoogleAPIRequestResult.cs" Line="1" Column="1" />
-      <File FileName="MyDemo.Core/Constants/GoogleServiceConfig.cs" Line="7" Column="92" />
-      <File FileName="MyApp.iOS/GoogleServiceHelper/GooglePlaceHelper.cs" Line="1" Column="1" />
-      <File FileName="MyDemo.Core/GoogleService/PlaceApi/Prediction.cs" Line="1" Column="1" />
-      <File FileName="MyApp.iOS/Controllers/UIControllers/GooglePlaceController.cs" Line="1" Column="1" />
-      <File FileName="MyApp.iOS/Controllers/UIControllers/AddressLookupTableSource.cs" Line="1" Column="1" />
-      <File FileName="MyApp.iOS/Controllers/DataSync/AMSController.cs" Line="1" Column="1" />
-      <File FileName="MyApp.iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="MyDemo.Core/Services/AMSDataService.cs" Line="180" Column="28" />
+      <File FileName="MyApp.iOS/Controllers/DataSync/AMSController.cs" Line="104" Column="70" />
+      <File FileName="MyDemo.Core/GoogleService/Map/GoogleAddressComponent.cs" Line="12" Column="5" />
+      <File FileName="MyDemo.Core/GoogleService/Map/GoogleDistanceMatrixComponent.cs" Line="32" Column="17" />
+      <File FileName="MyDemo.Core/Helper/GeneralHelper.cs" Line="16" Column="33" />
+      <File FileName="MyApp.iOS/GoogleServiceHelper/GoogleDistanceHelper.cs" Line="72" Column="56" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyDemoSln" expanded="True">
+            <Node name="MyApp.iOS" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UIControllers" expanded="True" />
+              </Node>
+              <Node name="GoogleServiceHelper" expanded="True" />
+            </Node>
+            <Node name="MyDemo.Core" expanded="True">
+              <Node name="Constants" expanded="True" />
+              <Node name="GoogleService" expanded="True">
+                <Node name="Map" expanded="True" />
+              </Node>
+              <Node name="Helper" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="AMSDataService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/jackni/Documents/Study/MyDemoSln/MyApp.iOS/Controllers/AMSController.cs" line="59" column="1" />
-      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="143" column="1" />
-      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="151" column="1" />
-      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="157" column="1" />
       <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="163" column="1" />
-      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="136" column="1" />
-      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="239" column="1" />
-      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="251" column="1" />
-      <Breakpoint file="/Users/jackni/Documents/XamDemos/MyDemoSln/MyDemo.Core/Services/AMSDataService.cs" line="244" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

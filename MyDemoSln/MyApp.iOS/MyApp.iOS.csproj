@@ -151,6 +151,9 @@
     <Reference Include="SatelliteMenu">
       <HintPath>..\Components\satellite-menu-1.2.1.0\lib\ios-unified\SatelliteMenu.dll</HintPath>
     </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -188,6 +191,7 @@
       <DependentUpon>GooglePlaceController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\UIControllers\AddressLookupTableSource.cs" />
+    <Compile Include="GoogleServiceHelper\GoogleDistanceHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
