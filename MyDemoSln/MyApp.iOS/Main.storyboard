@@ -244,6 +244,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue id="1025" destination="993" kind="show"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="974" rowHeight="44">
                                         <rect key="frame" x="0.0" y="66" width="600" height="44"/>
@@ -265,7 +268,7 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <navigationItem title="Title" id="611" key="navigationItem"/>
+                    <navigationItem title="Media Demos" id="611" key="navigationItem"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="568" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -377,5 +380,46 @@
             </objects>
             <point key="canvasLocation" x="2265" y="612"/>
         </scene>
+        <scene sceneID="992">
+            <objects>
+                <viewController id="993" sceneMemberID="viewController" customClass="GoogleCastViewController" title="Googlecast">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="990"/>
+                        <viewControllerLayoutGuide type="bottom" id="991"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="994">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1060" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="73" width="600" height="30"/>
+                                <state key="normal" title="Simple Cast Demo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="73" width="320" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem title="Google cast Demo" id="1040" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
+                    <connections>
+                        <outlet property="SimpleCastBtn" destination="1060" id="name-outlet-1060"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="995" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314" y="1403"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icon-cast-connected.png" width="39" height="34"/>
+        <image name="icon-cast-identified.png" width="39" height="34"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

@@ -123,12 +123,6 @@
     <Reference Include="System.Net.Http.Extensions">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.Connectivity">
-      <HintPath>..\packages\Xam.Plugin.Connectivity.2.0.2\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Connectivity.Abstractions">
-      <HintPath>..\packages\Xam.Plugin.Connectivity.2.0.2\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
-    </Reference>
     <Reference Include="Badge.Plugin">
       <HintPath>..\packages\Xam.Plugin.Badge.1.0.0.0\lib\Xamarin.iOS10\Badge.Plugin.dll</HintPath>
     </Reference>
@@ -153,6 +147,21 @@
     </Reference>
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BTProgressHUD">
+      <HintPath>..\Components\btprogresshud-1.20\lib\ios-unified\BTProgressHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Cast">
+      <HintPath>..\packages\Xamarin.Google.iOS.Cast.2.10.1.0\lib\Xamarin.iOS10\Google.Cast.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Maps">
+      <HintPath>..\packages\Xamarin.Google.iOS.Maps.1.11.1.0\lib\Xamarin.iOS10\Google.Maps.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +201,13 @@
     </Compile>
     <Compile Include="Controllers\UIControllers\AddressLookupTableSource.cs" />
     <Compile Include="GoogleServiceHelper\GoogleDistanceHelper.cs" />
+    <Compile Include="Controllers\UIControllers\GoogleCastViewController.cs" />
+    <Compile Include="Controllers\UIControllers\GoogleCastViewController.designer.cs">
+      <DependentUpon>GoogleCastViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleChomeCast\GoogleCastDeviceManagerDelegate.cs" />
+    <Compile Include="GoogleChomeCast\IGoogleCastUIViewController.cs" />
+    <Compile Include="GoogleChomeCast\DeviceScannerListener.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
@@ -212,6 +228,7 @@
     <Folder Include="Controllers\Base\" />
     <Folder Include="GoogleServiceHelper\" />
     <Folder Include="Controllers\UIControllers\" />
+    <Folder Include="GoogleChomeCast\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="mbprogresshud">
@@ -226,5 +243,23 @@
       <Version>1.2.1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+    <XamarinComponentReference Include="googleioscast">
+      <Version>2.10.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="btprogresshud">
+      <Version>1.20</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleiosmaps">
+      <Version>1.11.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon-cast-connected.png" />
+    <BundleResource Include="Resources\icon-cast-connected%402x.png" />
+    <BundleResource Include="Resources\icon-cast-identified.png" />
+    <BundleResource Include="Resources\icon-cast-identified%402x.png" />
   </ItemGroup>
 </Project>

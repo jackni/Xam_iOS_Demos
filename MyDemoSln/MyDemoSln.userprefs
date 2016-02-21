@@ -1,23 +1,24 @@
 ﻿<Properties StartupItem="MyApp.iOS/MyApp.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.9.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyDemo.Core/Services/AMSDataService.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Jack's iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyApp.iOS/Controllers/UIControllers/GoogleCastViewController.cs">
     <Files>
-      <File FileName="MyDemo.Core/Services/AMSDataService.cs" Line="180" Column="28" />
-      <File FileName="MyApp.iOS/Controllers/DataSync/AMSController.cs" Line="104" Column="70" />
-      <File FileName="MyDemo.Core/GoogleService/Map/GoogleAddressComponent.cs" Line="12" Column="5" />
-      <File FileName="MyDemo.Core/GoogleService/Map/GoogleDistanceMatrixComponent.cs" Line="32" Column="17" />
-      <File FileName="MyDemo.Core/Helper/GeneralHelper.cs" Line="16" Column="33" />
-      <File FileName="MyApp.iOS/GoogleServiceHelper/GoogleDistanceHelper.cs" Line="72" Column="56" />
+      <File FileName="MyApp.iOS/Controllers/UIControllers/GoogleCastViewController.cs" Line="232" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
+          <Node name="GoogleCastSample" expanded="True">
+            <Node name="GoogleCastSample" expanded="True" />
+          </Node>
           <Node name="MyDemoSln" expanded="True">
             <Node name="MyApp.iOS" expanded="True">
+              <Node name="Packages" expanded="True" />
               <Node name="Controllers" expanded="True">
                 <Node name="UIControllers" expanded="True" />
               </Node>
+              <Node name="GoogleChomeCast" expanded="True" />
               <Node name="GoogleServiceHelper" expanded="True" />
+              <Node name="Resources" expanded="True" />
             </Node>
             <Node name="MyDemo.Core" expanded="True">
               <Node name="Constants" expanded="True" />
@@ -25,9 +26,7 @@
                 <Node name="Map" expanded="True" />
               </Node>
               <Node name="Helper" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="AMSDataService.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
